@@ -8,8 +8,4 @@ class CartsController < ApplicationController
     current_user.save
     redirect_to cart_path(cart)
   end
-
-    def current_cart
-      current_user.try(:current_cart)
-    end
 end
